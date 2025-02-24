@@ -473,17 +473,17 @@ body {
   position: relative;
 }
 
+.hero_playVideoBtn svg {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  transform: translate(100%, 100%);
+}
+
 @media screen and (width >= 1280px) {
   .hero_playVideoBtn:hover, .hero_playVideoBtn:focus {
     transform: scale(1.1);
   }
-}
-
-.play_videoSVG {
-  position: absolute;
-  top: 0;
-  left: .2rem;
-  transform: translate(100%, 100%);
 }
 
 .playVideo-wrapper {
