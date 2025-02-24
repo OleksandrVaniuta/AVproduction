@@ -1,0 +1,25 @@
+{
+  "name": "avproduction",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://OleksandrVaniuta.github.io/AVproduction",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/*.html --public-url /AVproduction/",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "posthtml-include": "^2.0.1",
+    "prettier": "^3.5.1"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1",
+    "swiper": "^11.2.4"
+  }
+}

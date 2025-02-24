@@ -1,0 +1,22 @@
+.client_card {
+  max-width: 200px;
+  padding: 10px;
+}
+
+.client_card:not(:last-child) {
+  @media screen and (min-width: 769px) {
+    margin-right: 20px;
+  }
+}
+
+.clients_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
