@@ -123,19 +123,19 @@
 
   transition: transform 0.3s ease-out;
 
+  & svg {
+    position: absolute;
+    transform: translate(100%, 100%);
+    top: 0;
+    left: 2px;
+  }
+
   &:hover,
   &:focus {
     @media screen and (min-width: 1280px) {
       transform: scale(1.1);
     }
   }
-}
-
-.play_videoSVG {
-  position: absolute;
-  transform: translate(100%, 100%);
-  top: 0;
-  left: 0.2rem;
 }
 
 .playVideo-wrapper {
