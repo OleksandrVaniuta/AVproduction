@@ -53,15 +53,21 @@ function renderSlides(genre) {
   swiperContainer.innerHTML = res;
   swiper.destroy(
     (swiper = new Swiper('.swiper', {
-      slidesPerView: 2,
+      slidesPerView: 1,
       observer: true,
       observeParents: true,
       spaceBetween: 50,
       centeredSlides: true,
-      parallax: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+          centeredSlides: false,
+        },
       },
     }))
   );
